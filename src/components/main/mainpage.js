@@ -5,9 +5,9 @@ import DirectorsGrid from "./directors-grid/directors-grid";
 
 const MainPage = () => {
   return (
-    <main class="page__main">
-      <div class="modal-overlay"></div>
-      <div class="page__content">
+    <main className="page__main">
+      <div className="modal-overlay"></div>
+      <div className="page__content">
         <article>
           <section>
             <AboutHeader />

@@ -239,6 +239,7 @@
   }
 }
 .about-header__intro-copy {
+  min-height: 216px;
   font-family: "source_sans_prolight", Helvetica, Arial, sans-serif;
   letter-spacing: 0.5px;
   font-size: 1.2125rem;

@@ -95,7 +95,7 @@
 
 @media only screen and (min-width: 75rem) {
   .primary-nav__content {
-    height: 3.75rem;
+    height: 1.375rem;
     padding: 0;
     justify-content: space-between;
     align-items: center;
@@ -211,7 +211,7 @@
   height: calc(100vh - 4.375rem);
   /* background: #fff; */
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
   -webkit-transition: visibility 0.2s, opacity 0.2s ease-out;
   transition: visibility 0.2s, opacity 0.2s ease-out;
   -webkit-overflow-scrolling: touch;
@@ -966,7 +966,7 @@ button {
 }
 .sub-nav {
   position: absolute;
-  top: 4.375rem;
+  top: 5.375rem;
   box-shadow: 0 0.4375rem 0.625rem 0 rgb(0 0 0 / 10%);
   width: 100%;
   z-index: 99;
