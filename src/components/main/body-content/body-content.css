@@ -1,0 +1,97 @@
+.bc_layout {
+  width: 100rem;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 75rem) {
+  .bc_layoutColCentered .bc_layoutMain {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  .bc_layoutColCentered .bc_layoutMain {
+    width: calc(66.66667% - 2.08333rem);
+    float: left;
+    margin-left: 1.25rem;
+    max-width: 52.0625rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .bc_layoutColCentered .bc_layoutMain {
+    width: calc(100% - 2.5rem);
+    float: left;
+    margin-left: 1.25rem;
+  }
+}
+.bc_layoutColCentered .bc_layoutMain {
+  width: calc(100% - 3.125rem);
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.about .bodyCentered {
+  margin-bottom: 0;
+}
+.bc_layoutMain .body {
+  width: 100%;
+  margin: 0;
+}
+.body::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media (min-width: 108.75rem) {
+  .body {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .body {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+}
+
+.bodyContent {
+  padding: 0;
+  width: 100%;
+  float: none;
+  margin: auto;
+}
+
+@media only screen and (min-width: 48rem) {
+  .bodyContent > p,
+  .bodyContent > ol,
+  .bodyContent > ul {
+    font-size: 1.25rem;
+    margin-bottom: 1.125rem;
+  }
+}
+.bodyContent > p,
+.bodyContent > ol,
+.bodyContent > ul {
+  font-family: "source_sans_proregular", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  color: #2b2b2b;
+  letter-spacing: 0;
+  word-break: break-word;
+}
+
+.bodyContent > a,
+.bodyContent > p a,
+.bodyContent > ol a,
+.bodyContent > ul a {
+  color: #00bfd5;
+  text-decoration: none;
+}
