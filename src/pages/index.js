@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,8 +8,10 @@ export default function Home() {
       <Head>
         <title>Nasdaq</title>
         <meta name="description" content="Nasdaq" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Link href="/about/board">
+        <a style={{ fontSize: "x-large" }}>View Board of Directors</a>
+      </Link>
     </div>
   );
 }
