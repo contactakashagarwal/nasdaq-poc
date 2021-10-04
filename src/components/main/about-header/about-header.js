@@ -1,22 +1,8 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import AboutImage from "../../../images/GettyImages-926309126.jpeg";
 import AboutIntro from "./intro";
-import { FetchQueryResponse } from "../../../services/graphcms.service";
 
-const AboutHeader = () => {
-  const [title, setTitle] = useState("");
-  useEffect(() => {
-    async function FetchData() {
-      const query =
-        'query MyQuery {\n  pageContent(where: {key: "about-header__title"}) {\n    id\n    content\n  }\n}\n';
-      const titleResponse = await FetchQueryResponse(query);
-      setTitle(titleResponse.data.pageContent.content);
-      console.log(titleResponse);
-    }
-    FetchData();
-  }, []);
-
+const AboutHeader = ({ aboutHeader, aboutIntro }) => {
   return (
     <>
       <div className="about-header__title-container">
@@ -32,10 +18,10 @@ const AboutHeader = () => {
           </div>
         </div>
         <h1 className="about-header__title">
-          <span>{title}</span>
+          <span>{aboutHeader}</span>
         </h1>
       </div>
-      <AboutIntro />
+      <AboutIntro aboutIntro={aboutIntro} />
     </>
   );
 };
