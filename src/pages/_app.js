@@ -8,7 +8,7 @@ import "../components/footer/footer.css";
 import ReactGA from "react-ga";
 
 function MyApp({ Component, pageProps }) {
-  const TRACKING_ID = "G-1XSECLS3RX"; // YOUR_OWN_TRACKING_ID
+  const TRACKING_ID = "UA-210405723-1"; // YOUR_OWN_TRACKING_ID
   ReactGA.initialize(TRACKING_ID);
 
   ReactGA.event({
