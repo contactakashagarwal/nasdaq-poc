@@ -13,7 +13,7 @@ function BoardOfDirectors({
     <div>
       <Header />
       <MainPage
-        aboutHeader={aboutHeader}
+        aboutHeader={aboutHeader + " Welcome"}
         aboutIntro={aboutIntro}
         directors={directors}
         directorsGridTitle={directorsGridTitle}
