@@ -13,9 +13,9 @@ function BoardOfDirectors({
 }) {
   useEffect(() => {
     event({
-      action: "Search",
+      action: "Listing Board",
       params: {
-        custom: "custom event",
+        custom: "Initialize custom event",
       },
     });
   }, []);
