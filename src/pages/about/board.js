@@ -19,10 +19,10 @@ function BoardOfDirectors({
       },
     });
 
-    eventUsingGa({
-      category: "Taboola_Load",
-      action: "Load_5000_ms",
-    });
+    // eventUsingGa({
+    //   category: "Taboola_Load",
+    //   action: "Load_5000_ms",
+    // });
   }, []);
 
   return (
