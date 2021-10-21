@@ -8,4 +8,9 @@ export const pageview = (url) => {
 // log specific events happening.
 export const event = ({ action, params }) => {
   window.gtag("event", action, params);
+  window.ga("send", "event", action, params);
+};
+
+export const eventUsingGa = ({ category, action }) => {
+  window.ga("send", "event", category, action);
 };

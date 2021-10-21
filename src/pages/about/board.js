@@ -2,7 +2,7 @@ import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
 import MainPage from "../../components/main/mainpage";
 import { FetchQueryResponse } from "../../services/graphcms.service";
-import { event } from "../../lib/ga";
+import { event, eventUsingGa } from "../../lib/ga";
 import { useEffect } from "react";
 
 function BoardOfDirectors({
@@ -17,6 +17,11 @@ function BoardOfDirectors({
       params: {
         custom: "Initialize custom event",
       },
+    });
+
+    eventUsingGa({
+      category: "Taboola_Load",
+      action: "Load_5000_ms",
     });
   }, []);
 
