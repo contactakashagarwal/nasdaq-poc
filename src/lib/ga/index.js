@@ -12,6 +12,16 @@ export const event = ({ action, params }) => {
     if (tracker) {
       tracker.send("event", action, params);
     }
+
+    window.ga("send", {
+      hitType: "event",
+      eventCategory: "button_custom",
+      eventAction: "click_custom",
+      eventLabel: "contact form",
+      hitCallback: function () {
+        alert("custom Event received");
+      },
+    });
   }
 
   // window.ga("event", action, params);
