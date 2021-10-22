@@ -10,6 +10,6 @@ export const event = ({ action, params }) => {
   window.gtag("event", action, params);
 };
 
-// export const eventUsingGa = ({ category, action }) => {
-//   window.ga("send", "event", category, action);
-// };
+export const eventUsingGa = ({ category, action }) => {
+  ga("send", "event", category, action);
+};
