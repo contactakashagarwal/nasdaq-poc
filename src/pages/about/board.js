@@ -13,7 +13,7 @@ function BoardOfDirectors({
 }) {
   useEffect(() => {
     event({
-      action: "Listing Board",
+      action: "Listing Board New",
       params: {
         custom: "Initialize custom event",
       },

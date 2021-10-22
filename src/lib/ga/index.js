@@ -7,9 +7,14 @@ export const pageview = (url) => {
 
 // log specific events happening.
 export const event = ({ action, params }) => {
-  window.gtag("event", action, params);
+  if ("ga" in window) {
+    tracker = ga.getAll()[0];
+    if (tracker) tracker.send("event", action, params);
+  }
+
+  // window.ga("event", action, params);
 };
 
 export const eventUsingGa = ({ category, action }) => {
-  ga("send", "event", category, action);
+  window.ga("send", "event", category, action);
 };
