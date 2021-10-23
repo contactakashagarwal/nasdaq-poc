@@ -2,8 +2,8 @@ import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
 import MainPage from "../../components/main/mainpage";
 import { FetchQueryResponse } from "../../services/graphcms.service";
-import { event, eventUsingGa } from "../../lib/ga";
-import { useEffect } from "react";
+//import { event, eventUsingGa } from "../../lib/ga";
+// import { useEffect } from "react";
 
 function BoardOfDirectors({
   directors,
@@ -11,18 +11,18 @@ function BoardOfDirectors({
   aboutHeader,
   aboutIntro,
 }) {
-  useEffect(() => {
-    // event({
-    //   action: "Listing Board New",
-    //   params: {
-    //     custom: "Initialize custom event",
-    //   },
-    // });
-    // eventUsingGa({
-    //   category: "Taboola_Load",
-    //   action: "Load_5000_ms",
-    // });
-  }, []);
+  // useEffect(() => {
+  //   // event({
+  //   //   action: "Listing Board New",
+  //   //   params: {
+  //   //     custom: "Initialize custom event",
+  //   //   },
+  //   // });
+  //   // eventUsingGa({
+  //   //   category: "Taboola_Load",
+  //   //   action: "Load_5000_ms",
+  //   // });
+  // }, []);
 
   return (
     <div>
