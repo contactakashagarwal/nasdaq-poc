@@ -12,13 +12,12 @@ function BoardOfDirectors({
   aboutIntro,
 }) {
   useEffect(() => {
-    event({
-      action: "Listing Board New",
-      params: {
-        custom: "Initialize custom event",
-      },
-    });
-
+    // event({
+    //   action: "Listing Board New",
+    //   params: {
+    //     custom: "Initialize custom event",
+    //   },
+    // });
     // eventUsingGa({
     //   category: "Taboola_Load",
     //   action: "Load_5000_ms",
